@@ -1,0 +1,8 @@
+number = int(input("Введите число: "))
+i = "*" 
+i = i * number
+for j in range(number , 0, -1):
+    if (j != 0):
+        print(i)
+    elif (j == 0):
+        break
