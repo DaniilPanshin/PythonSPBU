@@ -1,0 +1,9 @@
+number = int(input("Введите число: "))
+number1 = int(input("Введите второе число: "))
+i = "*" 
+i = i * number
+for j in range(number1 , 0, -1):
+    if (j != 0):
+        print(i)
+    elif (j == 0):
+        break
