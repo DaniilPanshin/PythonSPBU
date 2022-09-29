@@ -1,0 +1,16 @@
+numb = int(input("Введите длину: "))
+numb1 = int(input("Введите высоту: "))
+n = 1 
+left = [ ]
+right = 1
+numb_use = numb1
+while numb_use != 0:
+    n = right
+    left.clear()
+    numb_use = numb_use - 1
+    for j in range (numb , 0, -1):
+        left.append(n)
+        n = n + numb1
+    else:
+        right = right + 1
+    print(left)
