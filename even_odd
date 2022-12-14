@@ -1,0 +1,25 @@
+ostos = []
+evenlist = [] 
+oddlist = []
+while True:
+    try:
+        n = int(input('Введите число: '))
+        ostos.append(n)
+        print(ostos) 
+    except ValueError:
+        for i in ostos: 
+            if (i % 2 == 0): 
+                evenlist.append(i) 
+            else: 
+                oddlist.append(i)
+        next
+        for f,s in zip(evenlist, oddlist):
+            print(f, ',', s)
+        a = [evenlist, oddlist]
+        length = min(map(len, a))     
+        if len(oddlist) == length:
+            evenlist = evenlist[length:]
+            print(evenlist)
+        else:
+            oddlist = oddlist[length:]
+            print(oddlist)
