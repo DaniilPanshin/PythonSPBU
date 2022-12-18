@@ -1,0 +1,13 @@
+import string
+def upper_c():
+    stroka = input()
+    new_stroka = ''
+    for i in stroka:
+        if i in string.ascii_lowercase:
+            j = string.ascii_lowercase.index(i)
+            new_stroka+=string.ascii_uppercase[j]
+        else:
+            new_stroka+=i
+    print(new_stroka)
+    
+upper_c()
