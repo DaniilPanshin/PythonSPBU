@@ -1,3 +1,4 @@
+#! python
 number = int(input("Введите число: "))
 i = "*" 
 i = i * number
