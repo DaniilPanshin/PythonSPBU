@@ -1,5 +1,5 @@
 #! python
-number = int(input("Введите число: "))
+number = int(input("Put number: "))
 i = "*" 
 i = i * number
 for j in range(number , 0, -1):
