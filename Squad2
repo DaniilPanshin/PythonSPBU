@@ -1,6 +1,6 @@
 #! python
-number = int(input("Введите число: "))
-number1 = int(input("Введите второе число: "))
+number = int(input("Put first number: "))
+number1 = int(input("Put second number: "))
 i = "*" 
 i = i * number
 for j in range(number1 , 0, -1):
