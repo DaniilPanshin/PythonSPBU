@@ -3,7 +3,7 @@ evenlist = []
 oddlist = []
 while True:
     try:
-        n = int(input('Введите число: '))
+        n = int(input('Put number: '))
         ostos.append(n)
         print(ostos) 
     except ValueError:
