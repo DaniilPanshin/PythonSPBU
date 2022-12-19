@@ -1,3 +1,4 @@
+#! python
 def sublist_in_list(sub, lis):
     return str(sub).strip('[]') in str(lis).strip('[]')
 
