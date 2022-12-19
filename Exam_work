@@ -34,7 +34,6 @@ def build_field():
     for j in range(int(s**0.5)):
         row = get_row(s,i,j)
         field.append(row)
-    # return field
     for count in range(i):
         field = iteratef(field,t)
     return field
