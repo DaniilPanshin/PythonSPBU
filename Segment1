@@ -1,0 +1,36 @@
+def sublist_in_list(sub, lis):
+    return str(sub).strip('[]') in str(lis).strip('[]')
+
+start1 = int(input('Enter start number of first segment '))
+end1 = int(input('Enter end number of first segment '))
+start2 = int(input('Enter start number of second segment '))
+end2 = int(input('Enter end number of second segment '))
+n = 0
+seg1 = list(range(start1, end1 + 1))
+seg2 = list(range(start2, end2 + 1))
+#segment =[4]
+
+if sublist_in_list(seg1, seg2) == True:
+    print('Segment is ',start2,'->', end2)
+    n += 1
+elif sublist_in_list(seg2, seg1) == True:
+    print('Segment is ', start1, '->',end1)
+    n += 1    
+else:
+    for i in seg1:
+        for j in seg2:
+            if i == j:
+                if max(seg1) >= max(seg2):
+                    segment = list(range(start2, end1 + 1))
+                    n += 1
+                    #print(segment)
+                elif max(seg1) <= max(seg2):
+                    segment = list(range(start1, end2 + 1))
+                    n += 1
+try:                  
+    if n == 0:
+        print('Defolt segments', start1, '->',end1, 'and' ,start2,'->', end2)
+    else:
+        print('Segment is ', segment[0], '->', segment[-1])
+except:
+    print(')))')
