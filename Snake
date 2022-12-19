@@ -1,3 +1,4 @@
+#! python
 numb = int(input("Введите длину: "))
 numb1 = int(input("Введите высоту: "))
 n = 1 
