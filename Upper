@@ -1,3 +1,4 @@
+#! python
 import string
 def upper_c():
     stroka = input()
