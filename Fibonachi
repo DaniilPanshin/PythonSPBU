@@ -19,10 +19,15 @@ def fibonacci(f1, f2):
         f2 = f
         print(f2, '', end='')
 
-print('Enter number')
+print('Enter a number')
 numb = int(input())
-if numb <= 2:
-    print('Number must be greater than 2')
+if numb <= 0:
+    print('Number must be greater than 0')
+elif numb == 1 or numb ==2:
+    fib_2 = 1
+    fib_1 = 1
+    fibonacci(fib_1, fib_2)
+
 else:
     fib_2 = find_prime_number(numb)
     fib_1 = find_prime_number(fib_2 - 1)
