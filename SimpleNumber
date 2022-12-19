@@ -1,11 +1,9 @@
 #! python
-number = int(input("Введите число: "))
-print("Результат:", end = " ")
-for i in range(number -1, 1, -1):
-    number_simple = 0
-    if (numb % i == 0):
-        for div in range(i- 1, 1, -1):
-            if (i % div == 0):
-                number_simple=number_simple +  1
-        if (number_simple == 0): 
-            print(i, end = " ")
+n = int(input("Put number: "))
+print('Is it prime -> ', prime_number(n))
+
+def prime_number(n):
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
